@@ -4,9 +4,8 @@
 # que ele obteve
 
 salario = float(input("Didite o seu salário atual: "))
-percetual = float(input("Didite o percentual do aumento do salário: "))
+aumento = float(input("Didite o salário com aumento: "))
 
-resPercentual = salario * (percetual / 100)
-salarioNovo = resPercentual + salario
-
-print("O aumento do seu salario em reais foi de R$",resPercentual," ficando com salário de R$",salarioNovo)
+percentual_salario = aumento / salario - 1
+print("Percentual do aumento", percentual_salario * 100, "%")
+#print("", )
