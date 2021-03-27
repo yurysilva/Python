@@ -1,8 +1,8 @@
 ano_atual = int(input("Digite a quantidade de anos atuais:"))
 mes_atual = int(input("Digite a quantidade de meses atuais: "))
-pergunta = str(input("Marque s se quer calcular futuro e n se quer calcular passado: "))
 ano_calcular = int(input("Digite quantidade de ano a ser calculada: "))
 mes_calcular = int(input("Digite a quantidade de meses a calcular: "))
+pergunta = str(input("Marque s se quer calcular futuro e n se quer calcular passado: "))
 
 #fazer a soma dos anos com meses
 if pergunta == "s" or pergunta == "S":
