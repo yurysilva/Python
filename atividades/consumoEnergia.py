@@ -14,7 +14,7 @@ if consumo_mes > 50:
         consumo_icms = 0
         consumo_total = acrescimo_kw
 else: 
-        acrescimo_kw = 0
+        acrescimo_kw = 14
         consumo_icms = 0
         consumo_total = 14
 
