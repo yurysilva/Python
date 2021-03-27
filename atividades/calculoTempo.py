@@ -12,8 +12,6 @@ if pergunta == "s" or pergunta == "S":
 
     print("No futuro serão no total {} anos e {} meses" .format(ano_total, mes))
 
-
-
 #fazer a subtração dos anos com meses
 elif pergunta == "n" or pergunta == "N":
     mes_para_ano = mes_calcular // 12
