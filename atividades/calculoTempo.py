@@ -35,7 +35,6 @@ elif pergunta == "n" or pergunta == "N":
         else:
             mes = mes_calcular - mes_atual
         #calculo dos anos
-        mes = (mes_calcular - mes_atual) % 12
         if ano_atual > ano_calcular:
             ano_total = (ano_atual - ano_calcular) - mes_para_ano
         else:
