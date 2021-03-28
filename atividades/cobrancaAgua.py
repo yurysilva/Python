@@ -18,7 +18,7 @@ if consumo_media > consumo_mes:#Desconto
         consumo_total = consumo_mes - (consumo_mes * 0.2)
     print("Sua conta ficou R${} reais aplicando o desconto de 20 por cento fica R${} reais." .format(consumo_mes, consumo_total))
 
-elif consumo_media < (consumo_mes * 0.01) + consumo_mes:#multa
+elif consumo_media < (consumo_mes * 0.10) + consumo_mes:#multa
     if consumo_mes <= 20:
         consumo_mes *= 2
         consumo_total = consumo_mes + (consumo_mes * 0.3)
