@@ -15,14 +15,26 @@ if pergunta == "s" or pergunta == "S":
 #fazer a subtração dos anos com meses
 elif pergunta == "n" or pergunta == "N":
     mes_para_ano = mes_calcular // 12
+    mes_calcular %= 12
 
     if mes_atual > mes_calcular:
-        mes = (mes_atual - mes_calcular) % 12
+        #calculo dos meses
+        if mes_atual > mes_calcular:
+            mes = mes_atual - mes_calcular
+        else:
+            mes = mes_calcular - mes_atual
+        #calculo dos anos
         if ano_atual > ano_calcular:
             ano_total = (ano_atual - ano_calcular) - mes_para_ano
         else:
             ano_total = (ano_calcular - ano_atual) - mes_para_ano
     else:
+        #calculo dos meses
+        if mes_atual > mes_calcular:
+            mes = mes_atual - mes_calcular
+        else:
+            mes = mes_calcular - mes_atual
+        #calculo dos anos
         mes = (mes_calcular - mes_atual) % 12
         if ano_atual > ano_calcular:
             ano_total = (ano_atual - ano_calcular) - mes_para_ano
