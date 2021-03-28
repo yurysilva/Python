@@ -19,4 +19,4 @@ else:
         consumo_total = 14
 
 
-print("O resultado do seu consumo do mês sendo RS{} do valor do consumo, RS{} de ICMS totalizando um total de R${}" .format(acrescimo_kw, consumo_icms, consumo_total))
+print("O resultado do seu consumo do mês sendo RS{} do valor do consumo, RS{} de ICMS dando um total de R${}" .format(acrescimo_kw, consumo_icms, consumo_total))
