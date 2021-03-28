@@ -35,4 +35,4 @@ else:
         inss_14 = (3305.22 - salario) * 0.14
         aliquota = inss_075 + inss_09 + inss_12 + inss_14
 
-print("O seu salário de R$ {} reais ficou com o calculo da contribuição do INSS de R$ {} reais." .format(salario, aliquota))
+print("O seu salário de R$ {:.2f} reais ficou com o calculo da contribuição do INSS de R$ {:.2f} reais." .format(salario, aliquota))

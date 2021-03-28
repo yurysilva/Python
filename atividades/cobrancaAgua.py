@@ -45,4 +45,4 @@ else:#valor normal
     else:
         consumo_mes *= 7
         consumo_total = consumo_mes
-    print("Sua conta ficou R${} reais." .format(consumo_total))
+    print("Sua conta ficou R${:.2f} reais." .format(consumo_total))
