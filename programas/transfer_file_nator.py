@@ -40,4 +40,4 @@ if len(comparcao := re.findall("\*dt", url)) > 1:
     name3 = re.sub("\*dtm", args_mes, name2)
     r = requests.get(url3)
     with open(destino+name3, 'wb') as f:
-        f.write(r.content) 
+        f.write(r.content)
