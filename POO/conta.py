@@ -13,12 +13,16 @@ class Conta:
 
     def deposito(self, depositar):
         self.__saldo += depositar
-        if self.__saldo > self.__limite:
-            print("Você ultrapassou o limite, por favor coloque um valor menor")
-            self.__saldo -= depositar
     
+    def __pode_sacar(self, valor_de_saque):
+        valor_a_sacar = self.__saldo + self.__limite
+        return valor_de_saque <= valor_a_sacar
+
     def saque(self, sacar):
-        self.__saldo -= sacar
+        if (self.__pode_sacar(sacar)):
+            self.__saldo -= sacar
+        else:
+            print(f"O valor {sacar} passou o limite.")
 
     def transferir(self, valor, destino):
         self.saque(valor)
@@ -37,6 +41,7 @@ class Conta:
     
     def get_numero(self):
         return self.__numero
+
     @limite.setter
     def limite(self, limite):
         self.__limite = limite
